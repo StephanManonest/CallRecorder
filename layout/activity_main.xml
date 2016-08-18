@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="devapp.callrecorder.MainActivity"
+    android:id="@+id/relativeLayout"
+    android:background="@color/abc_search_url_text_pressed">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/relativeLayout_1">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageViewTitle"
+            android:background="@drawable/callcenter_72"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/title_1"
+            android:id="@+id/textViewTitle"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/accent_material_dark"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imageViewTitle"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout_1"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/relativeLayout_1">
+
+        <Switch
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/switchOnOff"
+            android:text="@string/switch_onOff"
+            android:textColor="@color/accent_material_dark"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/spinnerMode"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButtonCallCenter"
+            android:src="@android:drawable/stat_sys_headset"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/title_3"
+        android:id="@+id/textViewOptions"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/accent_material_dark"
+        android:gravity="center"
+        android:layout_below="@id/linearLayout_1"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"/>
+
+    <Switch
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchAllCalls"
+        android:text="@string/switch_all"
+        android:textColor="@color/accent_material_dark"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/textViewOptions"
+        android:layout_centerHorizontal="true"/>
+
+    <Switch
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchServiceNumber"
+        android:text="@string/switch_service"
+        android:textColor="@color/accent_material_dark"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/switchAllCalls"
+        android:layout_centerHorizontal="true" />
+
+    <Switch
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchBlackList"
+        android:text="@string/switch_black"
+        android:textColor="@color/accent_material_dark"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/switchServiceNumber"
+        android:layout_alignStart="@+id/switchServiceNumber" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/title_4"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/accent_material_dark"
+        android:gravity="center"
+        android:layout_below="@+id/switchBlackList"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButtonKeyboard"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/switchBlackList"
+        android:src="@drawable/login_40"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint"
+        android:id="@+id/textView2"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/imageButtonKeyboard"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        android:textColor="@color/accent_material_dark" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButtonPhoneBook"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/switchBlackList"
+        android:src="@drawable/phonebook_40"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButtonKeyboard"
+        android:id="@+id/listViewBlackList"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

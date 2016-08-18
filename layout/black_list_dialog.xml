@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/relativeLayoutDialog">
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/name"
+        android:id="@+id/editTextName"
+        android:textSize="15sp"
+        android:ems="10"
+        android:textColor="@color/accent_material_dark"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="@string/number"
+        android:id="@+id/editTextNumber"
+        android:textSize="15sp"
+        android:ems="10"
+        android:textColor="@color/accent_material_dark"
+        android:gravity="center"
+        android:layout_below="@+id/editTextName"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_ok"
+        android:id="@+id/buttonAdd"
+        android:textSize="12sp"
+        android:textColor="@color/accent_material_dark"
+        android:layout_below="@+id/editTextNumber"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_cancel"
+        android:id="@+id/buttonCancel"
+        android:textSize="12sp"
+        android:textColor="@color/accent_material_dark"
+        android:layout_below="@+id/buttonAdd"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
